@@ -1,13 +1,18 @@
-
-const Home = {}
-const About = {}
-
+import MySelf from "../views/MySelf.vue";
+import Leaderboard from "../views/Leaderboard.vue";
+import Speedrun from "../views/Speedrun.vue";
+import TAS from "../views/TAS.vue";
+import Home from "../views/Home.vue";
 const routes = [
     { path: '/', component: Home },
-    { path: '/about', component: About },
+    { path: '/myself', component: MySelf },
+    { path: '/ld', component: Leaderboard },
+    { path: '/sr', component: Speedrun },
+    { path: '/tas', component: TAS },
+    { path: './path(.*)', component: Home },
 ]
 
 const router = VueRouter.createRouter({
-    history: VueRouter.createWebHashHistory(),
+    history: VueRouter.createWebHistory(),
     routes,
 })

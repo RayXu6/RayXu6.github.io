@@ -1,13 +1,13 @@
 <template>
   <header class="heading">
     <nav>
-      <p class="logo">RayXu6</p>
+      <router-link to="home" class="logo">RayXu6</router-link>
 
       <ul class="nav-list">
-        <li><p>主页</p></li>
-        <li><p>关于我们</p></li>
-        <li><p>联系我们</p></li>
-        <li><p>意见</p></li>
+        <li><router-link to="/myself">关于我</router-link></li>
+        <li><router-link to="/sr">速通</router-link></li>
+        <li><router-link to="/tas">TAS</router-link></li>
+        <li><router-link to="/ld">榜单</router-link></li>
       </ul>
     </nav>
   </header>
